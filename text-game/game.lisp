@@ -10,6 +10,13 @@
                         (garden (living-room east door))
                         (attic (living-room downstairs ladder))))
 
+(defparameter *objects* '(whiskey bucket frog chain))
+
+(defparameter *object-locations* '((whiskey living-room)
+                                   (bucket living-room)
+                                   (chain garden)
+                                   (frog garden)))
+
 (defun describe-location (location nodes)
     (cadr (assoc location nodes)))
 
